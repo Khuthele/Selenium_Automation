@@ -18,7 +18,8 @@ import java.util.Date;
 /**
  * Created by XY40224 on 07/08/2017.
  */
-public class ExcelDataConsumerHelper {
+public class ExcelDataConsumerHelper
+{
 
     public FileInputStream fis = null;
     public FileOutputStream fos = null;
@@ -47,7 +48,6 @@ public class ExcelDataConsumerHelper {
          cell = row.getCell(columnNumber);
 
          //GET DATA IN THE CORRECT FORMAT
-
             /*Get Strings from cell*/
          if(cell.getCellTypeEnum()==CellType.STRING)
              return cell.getStringCellValue();

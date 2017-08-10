@@ -47,13 +47,14 @@ public class HomePage extends BaseClassHelper {
     }
 
     //Check Login Button
-    public boolean CheckLoginButton(){
-
+    public boolean CheckLoginButton()
+    {
         return loginButton.isDisplayed();
     }
 
     //Click login button
-    public void ClickLogin(){
+    public void ClickLogin()
+    {
         loginButton.click();
     }
 
