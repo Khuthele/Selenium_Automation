@@ -26,7 +26,8 @@ public class TS1_CheckSiteStatus extends BaseClassHelper {
     String url = "https://www.oldmutual.co.za";
 
     //Launch the browser with the specified URL
-    WebDriver driver = BrowserFactoryHelper.startBrowser("chrome",url);
+    //WebDriver driver = BrowserFactoryHelper.startBrowser("chrome",url);
+    WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getChromePath(),getConfig().getApplicationUrl());
 
     @Test(priority=1)
     public void verifyHomepageExist() throws InterruptedException, IOException {
@@ -37,7 +38,8 @@ public class TS1_CheckSiteStatus extends BaseClassHelper {
 
         //Capture-server-error
         try {
-            driver.get(url);
+            //driver.get(url);
+            driver.get(getConfig().getApplicationUrl());
             test.info(MarkupHelper.createLabel("OMCOZA is up", ExtentColor.BLUE));
         } catch (Exception e) {
             test.log(Status.FATAL,"SITE IS DOWN/500-Internal Server Error");

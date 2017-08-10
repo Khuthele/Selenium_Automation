@@ -131,6 +131,14 @@ public class BaseClassHelper {
         driver.get(currentPath+"\\etc\\testOutPuts\\reports\\Automation_Report.html");
     }
 
+    public static TestConfigHelper getConfig()
+    {
+        TestConfigHelper config = new TestConfigHelper();
+        return config;
+    }
+
+
+
 //**************************************************The above Code is Generating Extent Reports Across all our Test Classes ****************************************************
 
     //**************Used to scroll the browser to the Top************
