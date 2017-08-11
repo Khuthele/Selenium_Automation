@@ -23,8 +23,8 @@ public class TS2_CheckTaxCalculator extends BaseClassHelper {
     TaxCalculatorsPage calculators_Page;
     HomePage home_page;
 
+    //@Test(priority =2, dataProvider = "taxCalculator",dataProviderClass = DataProviderHelper.class)
     @Test(priority =2, dataProvider = "taxCalculator",dataProviderClass = DataProviderHelper.class)
-
     public void checkTaxCalculators(ITestResult result,String intUserAge,String intMonthlySalary,String intOtherIncome,String intDeductionsOtherIncome,String intTaxable)
             throws InterruptedException, IOException {
 

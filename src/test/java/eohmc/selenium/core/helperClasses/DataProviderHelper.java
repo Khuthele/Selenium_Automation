@@ -8,10 +8,11 @@ import static eohmc.selenium.core.helperClasses.BaseClassHelper.currentPath;
 /**
  * Created by XY40224 on 07/08/2017.
  */
-public class DataProviderHelper {
+public class DataProviderHelper extends BaseClassHelper
+{
 
     ExcelDataConsumerHelper  excelDataConsumer = null;/*Object To Read Data From Excel*/
-    String xlFilePath = currentPath +"\\src\\test\\java\\eohmc\\selenium\\core\\testResources\\MasterTestSuite.xlsx";
+    String xlFilePath = currentPath +getConfig().getInputDataFile();
     String sheetName = "TestData";
 
     @DataProvider(name = "taxCalculator")
