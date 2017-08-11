@@ -131,6 +131,7 @@ public class BaseClassHelper {
         driver.get(currentPath+"\\etc\\testOutPuts\\reports\\Automation_Report.html");
     }
 
+    //Create instance of the TestConfig class
     public static TestConfigHelper getConfig()
     {
         TestConfigHelper config = new TestConfigHelper();

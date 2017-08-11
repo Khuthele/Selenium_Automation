@@ -1,17 +1,17 @@
 package eohmc.selenium.core.helperClasses;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
-import static eohmc.selenium.core.helperClasses.BaseClassHelper.currentPath;
 
 /**
  * Created by XY40224 on 07/08/2017.
  */
-public class DataProviderHelper {
+public class DataProviderHelper extends BaseClassHelper
+{
 
     ExcelDataConsumerHelper  excelDataConsumer = null;/*Object To Read Data From Excel*/
-    String xlFilePath = currentPath +"\\docs\\testResources\\MasterTestSuite.xlsx";
+    //Call the inputTestDataFile method to access the mastersuitefile
+    String xlFilePath = currentPath +getConfig().getInputDataFile();
+
     String sheetName = "TestData";
 
     @DataProvider(name = "taxCalculator")

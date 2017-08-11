@@ -23,11 +23,9 @@ public class TS1_CheckSiteStatus extends BaseClassHelper {
 
     //Create an Instance-Variable to access the HomePage objects/Elements
     HomePage home_page;
-    String url = "https://www.oldmutual.co.za";
 
     //Launch the browser with the specified URL
-    //WebDriver driver = BrowserFactoryHelper.startBrowser("chrome",url);
-    WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getChromePath(),getConfig().getApplicationUrl());
+    WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getChromeBrowser(),getConfig().getApplicationUrl());
 
     @Test(priority=1)
     public void verifyHomepageExist() throws InterruptedException, IOException {
@@ -38,7 +36,6 @@ public class TS1_CheckSiteStatus extends BaseClassHelper {
 
         //Capture-server-error
         try {
-            //driver.get(url);
             driver.get(getConfig().getApplicationUrl());
             test.info(MarkupHelper.createLabel("OMCOZA is up", ExtentColor.BLUE));
         } catch (Exception e) {
