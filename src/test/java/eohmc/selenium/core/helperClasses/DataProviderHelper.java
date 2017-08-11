@@ -11,7 +11,7 @@ import static eohmc.selenium.core.helperClasses.BaseClassHelper.currentPath;
 public class DataProviderHelper {
 
     ExcelDataConsumerHelper  excelDataConsumer = null;/*Object To Read Data From Excel*/
-    String xlFilePath = currentPath +"\\src\\test\\java\\eohmc\\selenium\\core\\testResources\\MasterTestSuite.xlsx";
+    String xlFilePath = currentPath +"\\docs\\testResources\\MasterTestSuite.xlsx";
     String sheetName = "TestData";
 
     @DataProvider(name = "taxCalculator")
