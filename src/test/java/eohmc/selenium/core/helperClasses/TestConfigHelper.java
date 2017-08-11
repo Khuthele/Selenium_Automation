@@ -29,29 +29,41 @@ public class TestConfigHelper extends BaseClassHelper
         }
     }
 
+    //Get chrome browser from properties file
     public String getChromeBrowser()
     {
         String browserChrome = properties.getProperty("chromeBrowser");
         return browserChrome;
     }
 
+    //Get application from properties file
     public String getApplicationUrl()
     {
         String url = properties.getProperty("baseUrl");
         return url;
     }
 
+    //Get chrome driver path from properties file
     public String getChromeDriverPath()
     {
         String chromeDriver = properties.getProperty("chromePath");
         return chromeDriver;
     }
 
+    //Get firefox browser from properties file
     public String getFirefoxDriverPath()
     {
         String firefoxDriver = properties.getProperty("firefoxPath");
         return firefoxDriver;
     }
+
+    //Get inputDataFile path from properties file
+    public String getInputDataFile()
+    {
+        String inputDataFile = properties.getProperty("masterTestSuite");
+        return inputDataFile;
+    }
+
     public String getFirefoxBrowser()
     {
         String firefoxBrowser = properties.getProperty("firefoxBrowser");
@@ -67,12 +79,6 @@ public class TestConfigHelper extends BaseClassHelper
     {
         String safariBrowser = properties.getProperty("safariBrowser");
         return safariBrowser;
-    }
-
-    public String getInputDataFile()
-    {
-        String inputDataFile = properties.getProperty("masterTestSuite");
-        return inputDataFile;
     }
 
     public String getTestDataSheet()

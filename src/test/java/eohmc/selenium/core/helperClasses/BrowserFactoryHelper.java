@@ -24,8 +24,7 @@ public class BrowserFactoryHelper {
         if(browserName.equalsIgnoreCase("firefox")){
 
             //Initialize Firefox driver
-            //String driverPath = currentPath+"\\etc\\browserFactory\\FirefoxDriver\\geckodriver.exe";
-            //System.setProperty("webdriver.gecko.driver", driverPath);
+            //Get the firefox driver path from TestConfig properties file
             System.setProperty("webdriver.gecko.driver", currentPath+getConfig().getFirefoxDriverPath());
             driver=new FirefoxDriver();
             driver.manage().window().maximize();
@@ -33,7 +32,7 @@ public class BrowserFactoryHelper {
         }
         else if(browserName.equalsIgnoreCase("chrome")){
             //Initialize chrome driver
-            //System.setProperty("webdriver.chrome.driver", currentPath+"\\etc\\browserFactory\\chromedriver_win32\\chromedriver.exe");
+            //Get the chrome driver path from TestConfig properties file
             System.setProperty("webdriver.chrome.driver", currentPath+getConfig().getChromeDriverPath());
             driver=new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
