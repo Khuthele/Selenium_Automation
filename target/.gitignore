@@ -1,0 +1,4 @@
+#ignore all screenshot files
+
+generated-test-sources
+test-classes
