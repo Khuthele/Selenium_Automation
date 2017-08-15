@@ -16,6 +16,10 @@ public class TaxCalculatorsPage extends BaseClassHelper {
 
     //All WebElements are identified by @FindBy annotation
     @FindBy(how = How.LINK_TEXT,using = "Income Tax Calculator") WebElement taxCalculatorLink;
+
+
+
+
     @FindBy(how = How.ID,using = "age") WebElement ageTextBox;
     @FindBy(how = How.ID,using = "salary") WebElement salaryTextBox;
     @FindBy(how = How.ID,using = "otherincome") WebElement otherIncomeTextBox;
@@ -46,6 +50,11 @@ public class TaxCalculatorsPage extends BaseClassHelper {
     public void setUserAge(String intUserAge){
         //ageTextBox.sendKeys(String.valueOf(intUserAge));
         ageTextBox.sendKeys(intUserAge);
+    }
+
+    //Clear User age text box
+    public void clearText(){
+        ageTextBox.clear();
     }
 
     //Set User Monthly Salary

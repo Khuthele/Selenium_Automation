@@ -9,16 +9,21 @@ public class DataProviderHelper extends BaseClassHelper
 {
 
     ExcelDataConsumerHelper  excelDataConsumer = null;/*Object To Read Data From Excel*/
+
     //Call the inputTestDataFile method to access the mastersuitefile
     String xlFilePath = currentPath +getConfig().getInputDataFile();
-
     String sheetName = "TestData";
 
-    @DataProvider(name = "taxCalculator")
-    public Object[][] userFirstTest() throws Exception {
+
+    @DataProvider(name = "taxCalculatorData")
+    public Object[][] taxCalculatorData() throws Exception {
         Object[][] data = testData(xlFilePath,sheetName);
+
+        intRowCount = (data.length);/*Get number of rows*/
         return data;
     }
+
+
 
     //Create a constructor method to load the workbook(Generic method)
     public Object[][] testData(String xlFilePath, String sheetName) throws Exception {
@@ -33,7 +38,7 @@ public class DataProviderHelper extends BaseClassHelper
 
         dataFromXL = new Object[rows-1][columns];/*Rows-1 is to skip the header row in the sheet*/
 
-        for(int i=1; i<rows; i++)
+        for(int i=1; i<rows; i++)/*start index from the second row*/
         {
             for(int j=0; j<columns; j++)
             {

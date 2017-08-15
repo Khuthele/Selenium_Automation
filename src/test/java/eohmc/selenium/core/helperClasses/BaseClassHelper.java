@@ -40,6 +40,7 @@ public class BaseClassHelper {
 
     public static WebDriver driver;
     public static String currentPath = System.getProperty("user.dir");
+    public static int intRowCount = 0;
     //public static String inputDataPath = currentPath+"\\docs";
 
 //**************************************************The below Code is Generating Extent Reports Across all our Test Classes ****************************************************
@@ -142,7 +143,21 @@ public class BaseClassHelper {
 
 //**************************************************The above Code is Generating Extent Reports Across all our Test Classes ****************************************************
 
-    //**************Used to scroll the browser to the Top************
+    //**************Used to scroll the browser to the Top of the page************
+    public void scrollToTop(){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,-850)", "");
+    }
+
+    //TODO: Add scroll to bottom of the
+
+    //**************Used to scroll the browser to the Down************
+    public void scrollUp(){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("window.scrollBy(0,-450)", "");
+    }
+
+    //**************Used to scroll the browser ************
     public void scrollDown(){
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("scroll(0, 650);");
@@ -153,14 +168,6 @@ public class BaseClassHelper {
         JavascriptExecutor jse = (JavascriptExecutor)driver;
         jse.executeScript("scroll(0, 1000);");
     }
-
-    //**************Used to scroll the browser to the Down************
-    public void scrollUp(){
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
-        //jse.executeScript("scroll(0, -450);");
-        jse.executeScript("window.scrollBy(0,-450)", "");
-    }
-
     //**************Used to select dropdown items by Sending keys************
     public void selectBySendKeys(){
 

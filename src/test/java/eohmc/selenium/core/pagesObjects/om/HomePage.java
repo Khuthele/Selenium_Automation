@@ -37,7 +37,6 @@ public class HomePage extends BaseClassHelper {
         PageFactory.initElements(driver, this);
     }
 
-
     //*******************************ELEMENT & OBJECTS INTERACTIONS/BEHAVIORS*******************************************
 
     //Get the title of the home Page
