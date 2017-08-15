@@ -64,6 +64,13 @@ public class TestConfigHelper extends BaseClassHelper
         return inputDataFile;
     }
 
+    //Get automation report path from properties file
+    public String getAutoReportPath()
+    {
+        String autoReportPath = properties.getProperty("emailReportPath");
+        return autoReportPath;
+    }
+
     public String getFirefoxBrowser()
     {
         String firefoxBrowser = properties.getProperty("firefoxBrowser");
