@@ -45,6 +45,7 @@ public class BaseClassHelper {
 
 //**************************************************The below Code is Generating Extent Reports Across all our Test Classes ****************************************************
     //Declare and Import Extent Reports Classes to generate Extent Reports in a Listener
+    TestReportEmailHelper emailTestReport;
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extent;
     public static ExtentTest test;
@@ -125,11 +126,11 @@ public class BaseClassHelper {
 
     //Write to Report
     @AfterSuite(alwaysRun = true)
-    public void tearDown(){
+    public void tearDown() throws Exception {
         extent.flush();
-
         //Open the Report HTML after tests
-        driver.get(currentPath+"\\etc\\testOutPuts\\reports\\Automation_Report.html");
+        driver.get(currentPath+getConfig().getAutoReportPath());
+        TestReportEmailHelper.emailReport();
     }
 
     //Create instance of the TestConfig class
@@ -222,11 +223,12 @@ the file name, we can make use of this method to verify.*/
         email.setSmtpPort(465);
         email.setAuthenticator(new DefaultAuthenticator("eohmc@gmail.com", "password"));
         email.setSSLOnConnect(true);
-        email.setFrom("tshimank@gmail.com");
+        email.setFrom("mbikosiwapiwe@gmail.com");
         email.setSubject("OMCOZA Automation tests");
-        email.setMsg("This is a test mail ... :-)");
-        email.addTo("MTshitenda@oldmutual.com");
+        email.setMsg("This is test mail");
+        email.addTo("Siwapiwe.Mbiko@eoh.com");
         email.send();
     }
+
 }
 
