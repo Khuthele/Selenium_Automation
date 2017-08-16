@@ -23,9 +23,10 @@ public class TS2_CheckTaxCalculator extends BaseClassHelper {
     TaxCalculatorsPage calculators_Page;
     HomePage home_page;
     int testRuns = intRowCount;/*Run test based on the number of data supplied*/
+    String strExpected;
 
     @Test(priority =2, dataProvider = "taxCalculatorData",dataProviderClass = DataProviderHelper.class)
-    public void checkTaxCalculators(ITestResult result,String intUserAge,String intMonthlySalary,String intOtherIncome,String intDeductionsOtherIncome,String intTaxable) throws InterruptedException, IOException {
+    public void checkTaxCalculators(ITestResult result,String intUserAge,String intMonthlySalary,String intOtherIncome,String intDeductionsOtherIncome,String intTaxable,String strExpected) throws InterruptedException, IOException {
 
         //Create Test Objects
         test = extent.createTest("Check Tax Calculators"); //Declare & Create Report Object
@@ -55,7 +56,6 @@ public class TS2_CheckTaxCalculator extends BaseClassHelper {
             this.scrollDown();
 
             //Verify Calculation results
-            String strExpected = "R 5,610.61";
             String strActual = calculators_Page.getGrossIncome();
 
             if (!strExpected.equals(strActual)) {
