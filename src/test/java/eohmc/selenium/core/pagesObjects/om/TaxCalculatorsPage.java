@@ -16,6 +16,10 @@ public class TaxCalculatorsPage extends BaseClassHelper {
 
     //All WebElements are identified by @FindBy annotation
     @FindBy(how = How.LINK_TEXT,using = "Income Tax Calculator") WebElement taxCalculatorLink;
+
+
+
+
     @FindBy(how = How.ID,using = "age") WebElement ageTextBox;
     @FindBy(how = How.ID,using = "salary") WebElement salaryTextBox;
     @FindBy(how = How.ID,using = "otherincome") WebElement otherIncomeTextBox;
@@ -45,32 +49,32 @@ public class TaxCalculatorsPage extends BaseClassHelper {
     //Set User Age
     public void setUserAge(String intUserAge){
         //ageTextBox.sendKeys(String.valueOf(intUserAge));
+        ageTextBox.clear();
         ageTextBox.sendKeys(intUserAge);
     }
 
     //Set User Monthly Salary
     public void setUserMonthlySalary(String intMonthlySalary){
-        //salaryTextBox.sendKeys(String.valueOf(intMonthlySalary));
+        salaryTextBox.clear();
         salaryTextBox.sendKeys(intMonthlySalary);
     }
 
     //Set Other Income
     public void setOtherIncome(String intOtherIncome){
-        //otherIncomeTextBox.sendKeys(String.valueOf(intOtherIncome));
+        otherIncomeTextBox.clear();
         otherIncomeTextBox.sendKeys(intOtherIncome);
     }
 
     //Set Deductions
     public void setDeductionOtherIncome(String intDeductionsOtherIncome ){
-        //deductionOtherIncomeTextBox.sendKeys(String.valueOf(intDeductionsOtherIncome));
+        deductionOtherIncomeTextBox.clear();
         deductionOtherIncomeTextBox.sendKeys(intDeductionsOtherIncome);
-
     }
 
     //Set Tax
     public void setTaxableCapGain(String intTaxable){
+        taxableCapitalGainTextBox.clear();
         taxableCapitalGainTextBox.sendKeys(String.valueOf(intTaxable));
-        //taxableCapitalGainTextBox.sendKeys(intTaxable);
     }
 
 

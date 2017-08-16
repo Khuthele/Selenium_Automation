@@ -66,8 +66,5 @@ public class TS1_CheckSiteStatus extends BaseClassHelper {
             test.log(Status.FAIL,"Login Page did not load correctly");
         }
 
-       //Click on the tools Link to access all other web features
-        Thread.sleep(5000);
-        home_page.ClickToolsLink();
     }
 }
