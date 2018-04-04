@@ -1,5 +1,4 @@
 package eohmc.selenium.core.helperClasses;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -25,22 +24,36 @@ public class TestConfigHelper extends BaseClassHelper
         }
         catch (java.io.IOException e)
         {
-            System.out.println("Exception is " + e.getMessage());
+            System.out.println("[Error] - Exception is " + e.getMessage());
         }
     }
 
+	//Get application from properties file
+    public String getApplicationUrl()
+    {
+        String url = properties.getProperty("baseUrl");
+        return url;
+    }
+	
+    //Get internet explorer browser from properties file
+    public String getInterExplorerBrowser()
+    {
+        String browserIE = properties.getProperty("internetExplorerBrowser");
+        return browserIE;
+    }
+
+    //Get internet explorer driver path from properties file
+    public String getInterExplorerDriverPath()
+    {
+        String ieDriverPatch = properties.getProperty("internetExplorerPatch");
+        return ieDriverPatch;
+    }
+	
     //Get chrome browser from properties file
     public String getChromeBrowser()
     {
         String browserChrome = properties.getProperty("chromeBrowser");
         return browserChrome;
-    }
-
-    //Get application from properties file
-    public String getApplicationUrl()
-    {
-        String url = properties.getProperty("baseUrl");
-        return url;
     }
 
     //Get chrome driver path from properties file
@@ -57,11 +70,30 @@ public class TestConfigHelper extends BaseClassHelper
         return firefoxDriver;
     }
 
+	//Get firefox driver path from properties file
+    public String getFirefoxBrowser()
+    {
+        String firefoxBrowser = properties.getProperty("firefoxBrowser");
+        return firefoxBrowser;
+    }
+
+    public String getSafariBrowser()
+    {
+        String safariBrowser = properties.getProperty("safariBrowser");
+        return safariBrowser;
+    }
+	
     //Get inputDataFile path from properties file
     public String getInputDataFile()
     {
         String inputDataFile = properties.getProperty("masterTestSuite");
         return inputDataFile;
+    }
+
+    public String getTestDataSheet()
+    {
+        String testDataSheet = properties.getProperty("testDataSheet");
+        return testDataSheet;
     }
 
     //Get automation report path from properties file
@@ -70,30 +102,4 @@ public class TestConfigHelper extends BaseClassHelper
         String autoReportPath = properties.getProperty("emailReportPath");
         return autoReportPath;
     }
-
-    public String getFirefoxBrowser()
-    {
-        String firefoxBrowser = properties.getProperty("firefoxBrowser");
-        return firefoxBrowser;
-    }
-
-    public String getIEBrowser()
-    {
-        String ieBrowser = properties.getProperty("ieBrowser");
-        return ieBrowser;
-    }
-    public String getSafariBrowser()
-    {
-        String safariBrowser = properties.getProperty("safariBrowser");
-        return safariBrowser;
-    }
-
-    public String getTestDataSheet()
-    {
-        String strTestDataSheet = properties.getProperty("testdatasheet");
-        return strTestDataSheet;
-    }
-
-
-
 }

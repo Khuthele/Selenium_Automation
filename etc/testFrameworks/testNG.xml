@@ -1,28 +1,29 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Old Mutual Test Suite">
+<suite name="RegressionPack" verbose ="1">
 
-    <!--This listener will listen to all the test for reporting and logging to the extentReport test-output folder>-->
-    <!--<listeners>-->
-    <!--<listener class-name="com.omcoza.Helpers.BaseClass"/>-->
-    <!--</listeners>-->
+    <!--This listener will listen to all the test for reporting and logging to the extentReport test-output folder-->
+    <listeners>
+        <listener class-name="eohmc.selenium.core.testCases.cdp.loginTestClass"/>
+    </listeners>
 
     <!--This will drive the execution of ALL the test scripts in the Test suite -->
-    <test name="EOHMC Hybrid automation framework">
+    <test name="RegressionPack">
         <packages>
-            <package name="eohmc.selenium.core.testCases.om" />
+            <package name="eohmc.selenium.core.testCases.cdp.loginTestClass" />
         </packages>
     </test>
-
     <!--This will drive the execution of SELECTED test scripts in the suite -->
     <!--<test name="Run individual test" >-->
 
-    <!--<classes>-->
-    <!--<class name="eohmc.selenium.core.testCases">-->
-    <!--<methods>-->
-    <!--<include name="TS0_FindBrokenLinks" />-->
-    <!--</methods>-->
-    <!--</class>-->
+    <test name="Regression" >
+        <classes>
+            <class name="eohmc.selenium.core.testCases.cdp.loginTestClass">
+                <methods>
+                    <include name="loginTestClass" />
+                </methods>
+            </class>
+        </classes>
+    </test>
 
-    <!--</test>-->
 </suite>
