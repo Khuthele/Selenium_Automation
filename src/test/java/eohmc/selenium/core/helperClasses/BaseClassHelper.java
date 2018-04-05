@@ -51,7 +51,7 @@ public class BaseClassHelper
     static Date now = new Date();
     static String strDate,toDate;
 	
-	public static WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getFirefoxBrowser(),getConfig().getApplicationUrl());
+	public static WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getChromeBrowser(),getConfig().getApplicationUrl());
 
     //Write reusable method to capture screenshots
     public static File captureScreen(WebDriver driver, String screenShotName)
@@ -67,7 +67,6 @@ public class BaseClassHelper
             strFileLocation = new File(currentPath + "\\etc\\testOutPuts\\screenshots\\" + screenShotName + "_" + strDate + ".png");
             File strDestination = new File(String.valueOf(strFileLocation));
             FileUtils.copyFile(strSource, strDestination);
-		
         }
         catch(WebDriverException ex)
         {
@@ -88,16 +87,19 @@ public class BaseClassHelper
         htmlReporter = new ExtentHtmlReporter(currentPath+"\\etc\\testOutPuts\\reports\\Automation Test Execution Report_" + toDate + ".html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
-		
+
+        System.getProperties().list(System.out);
+
         //Set Test Information withing the Report
-        extent.setSystemInfo("OS","Windows 10");
-        extent.setSystemInfo("Host Name","N90N0UZM");
-        extent.setSystemInfo("Environment","QA");
-        extent.setSystemInfo("UserName","KhutheleM");
+        extent.setSystemInfo("OS",  getConfig().getOperatingSystem());
+        extent.setSystemInfo("Host Name",getConfig().getHostName());
+        extent.setSystemInfo("Environment",getConfig().getTestEnvironment());
+        extent.setSystemInfo("UserName",getConfig().getUserName());
+
         //Set Report information
         htmlReporter.getStartTime();
-		htmlReporter.config().setDocumentTitle("Old Mutual Calculate Income Tax Automation Report");
-        htmlReporter.config().setReportName("Automation Test Execution Report");
+		htmlReporter.config().setDocumentTitle(getConfig().getProjectName());
+        htmlReporter.config().setReportName(getConfig().getReportName());
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         htmlReporter.config().setTheme(Theme.STANDARD);
     }
