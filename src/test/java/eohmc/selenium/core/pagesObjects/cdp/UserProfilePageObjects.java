@@ -32,9 +32,36 @@ public class UserProfilePageObjects extends BaseClassHelper
     }
 
     //All WebElements are identified by @FindBy annotation
+    @FindBy(how = How.XPATH,using = "//td/a[text()='View']") WebElement viewButton;
+    @FindBy(how = How.XPATH,using = "//div/a/p[text()='Career Development']") WebElement homeButton;
     @FindBy(how = How.XPATH,using = "//td/a[text()='Edit']") WebElement editButton;
     @FindBy(how = How.ID,using = "saveDetails")  WebElement saveButton;
-   
+
+
+    //Wait for the view button
+    public boolean isViewButtonDisplayed()
+    {
+        return viewButton.isDisplayed();
+    }
+
+    //Click view button
+    public void clickViewButton()
+    {
+        viewButton.click();
+    }
+
+    //Wait for the home button
+    public boolean isHomeButtonDisplayed()
+    {
+        return homeButton.isDisplayed();
+    }
+
+    //Click home button
+    public void clickHomeButton()
+    {
+        homeButton.click();
+    }
+
     //Wait for the edit button
     public boolean isEditButtonDisplayed()
     {
@@ -52,4 +79,6 @@ public class UserProfilePageObjects extends BaseClassHelper
     {
       return saveButton.isDisplayed();
     }
+
+
 }

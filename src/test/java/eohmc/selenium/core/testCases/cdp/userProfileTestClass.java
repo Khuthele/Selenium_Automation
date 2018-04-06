@@ -28,7 +28,7 @@ public class userProfileTestClass extends BaseClassHelper
 
     @Test(priority = 1,dataProvider = "CDPLoginDetailsData",dataProviderClass = DataProviderHelper.class)
     public void LoginDetails(String UserNameField, String PassWordField)
-    {
+        {
         try
         {
             //Create Page Objects
@@ -109,7 +109,7 @@ public class userProfileTestClass extends BaseClassHelper
             //Capture-server-error
             try
             {
-                test = extent.createTest("Navigate To Careers Reviews.");
+                test = extent.createTest("Navigate To Summary.");
                 driver.get(getConfig().getApplicationUrl());
                 test.pass(MarkupHelper.createLabel("Successfully navigated to the career reviews page.", ExtentColor.GREY));
             }
@@ -126,11 +126,25 @@ public class userProfileTestClass extends BaseClassHelper
 				Thread.sleep(3000);
                 test.pass(MarkupHelper.createLabel("Test Passed : Successfully navigated to the Home Page.", ExtentColor.GREEN));
                 File screenshotPath = captureScreen(driver,"Passed Home Page.");
-                
+
+                Assertions.isTrue("true", userProfilePageobjects.isViewButtonDisplayed());
+
+                userProfilePageobjects.clickViewButton();
+
+                Thread.sleep(2000);
+
+                Assertions.isTrue("true", userProfilePageobjects.isHomeButtonDisplayed());
+
+                File screenshotPath1 = captureScreen(driver,"[ERROR] - Failed Home Page.");
+                test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath1)));
+
+                userProfilePageobjects.clickHomeButton();
+
+                Thread.sleep(2000);
+
 		      	userProfilePageobjects.clickEditButton();
 				
 				test.pass("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
-	
             }
             else
             {
