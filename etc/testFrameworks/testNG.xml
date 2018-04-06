@@ -21,9 +21,9 @@
             <class name="eohmc.selenium.core.testCases.cdp.loginTestClass">
                 <methods>
                     <include name="loginTestClass" />
+                    <include name="userProfileTestClass" />
                 </methods>
             </class>
         </classes>
     </test>
-
 </suite>

@@ -96,8 +96,50 @@ public class TestConfigHelper extends BaseClassHelper
         return testDataSheet;
     }
 
+    //Get project name
+    public String getProjectName()
+    {
+        String ProjectName = properties.getProperty("projectName");
+        return ProjectName;
+    }
+
+    //Get report name
+    public String getReportName()
+    {
+        String ReportName = properties.getProperty("reportName");
+        return ReportName;
+    }
+
+    //Get operating system name
+    public String getOperatingSystem()
+    {
+        String OperatingSystem = properties.getProperty("operatingSystem");
+        return OperatingSystem;
+    }
+
+    //Get Host Name
+    public String getHostName()
+    {
+        String HostName = properties.getProperty("hostName");
+        return HostName;
+    }
+
+    //Get Test Environment
+    public String getTestEnvironment()
+    {
+        String TestEnvironment = properties.getProperty("testEnvironment");
+        return TestEnvironment;
+    }
+
+    //Get report name
+    public String getUserName()
+    {
+        String UserName = properties.getProperty("userName");
+        return UserName;
+    }
+
     //Get automation report path from properties file
-    public String getAutoReportPath()
+    public String getReportPath()
     {
         String autoReportPath = properties.getProperty("emailReportPath");
         return autoReportPath;
