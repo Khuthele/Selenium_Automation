@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
  */
 public class userProfileTestClass extends BaseClassHelper
 {
-	//Create an Instance-Variable to access the TaxCalculatorsPageObjects and HomePagePageObjects objects/Elements
+	//Create an Instance-Variable to access page objects
     LoginPageObjects careerDevelopmentPageObjects;
     UserProfilePageObjects userProfilePageobjects;
 

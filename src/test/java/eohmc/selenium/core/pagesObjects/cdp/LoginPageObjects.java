@@ -14,7 +14,6 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class LoginPageObjects extends BaseClassHelper
 {
-    //Declare Objects
     //To perform web action
     Actions actions = new Actions(driver);
 

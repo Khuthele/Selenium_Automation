@@ -138,7 +138,21 @@ public class TestConfigHelper extends BaseClassHelper
         return UserName;
     }
 
-    //Get automation report path from properties file
+    //Get sender or from email
+    public String getFromEmail()
+    {
+        String FromEmail = properties.getProperty("fromEmail");
+        return FromEmail;
+    }
+
+    //Get to receiving or to emails
+    public String getToEmail()
+    {
+        String ToEmail = properties.getProperty("toEmail");
+        return ToEmail;
+    }
+
+    //Get report path from properties file
     public String getReportPath()
     {
         String autoReportPath = properties.getProperty("emailReportPath");

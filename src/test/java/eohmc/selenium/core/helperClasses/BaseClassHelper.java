@@ -47,7 +47,7 @@ public class BaseClassHelper
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extent;
     public static ExtentTest test;
-	 public static  SimpleDateFormat sdfDate = new SimpleDateFormat("dd-MM-yyyy HH-mm-ss");
+    public static  SimpleDateFormat sdfDate = new SimpleDateFormat("dd-MM-yyyy HH-mm-ss");
     static Date now = new Date();
     static String strDate,toDate;
 	

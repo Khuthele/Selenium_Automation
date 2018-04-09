@@ -20,10 +20,6 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class UserProfilePageObjects extends BaseClassHelper
 {
-	//Declare Objects
-    //To perform web action
-    Actions actions = new Actions(driver);
-
     //Create a Constructor to initialize objects
     public UserProfilePageObjects(WebDriver localDriver)
     {
@@ -36,7 +32,6 @@ public class UserProfilePageObjects extends BaseClassHelper
     @FindBy(how = How.XPATH,using = "//div/a/p[text()='Career Development']") WebElement homeButton;
     @FindBy(how = How.XPATH,using = "//td/a[text()='Edit']") WebElement editButton;
     @FindBy(how = How.ID,using = "saveDetails")  WebElement saveButton;
-
 
     //Wait for the view button
     public boolean isViewButtonDisplayed()
@@ -79,6 +74,4 @@ public class UserProfilePageObjects extends BaseClassHelper
     {
       return saveButton.isDisplayed();
     }
-
-
 }

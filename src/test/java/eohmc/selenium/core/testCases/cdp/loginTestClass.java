@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 public class loginTestClass extends BaseClassHelper
 {
-    //Create an Instance-Variable to access the TaxCalculatorsPageObjects and HomePagePageObjects objects/Elements
+    //Create an Instance-Variable to access page objects
     LoginPageObjects careerDevelopmentPageObjects;
 
     @Test(priority = 1,dataProvider = "CDPLoginDetailsData",dataProviderClass = DataProviderHelper.class)
@@ -25,7 +25,6 @@ public class loginTestClass extends BaseClassHelper
         {
             //Create Page Objects
             careerDevelopmentPageObjects = new LoginPageObjects(driver);
-
 
             //Capture-server-error
             try
@@ -82,7 +81,7 @@ public class loginTestClass extends BaseClassHelper
                 test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
             }
 
-            Thread.sleep(6000);
+            Thread.sleep(3000);
         }
         catch(InterruptedException ex)
         {
