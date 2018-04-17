@@ -51,15 +51,15 @@ public class DataProviderHelper extends BaseClassHelper
 		return data;
 	}
 
-	@DataProvider(name = "CDPLoginDetailsData")
-	public Object[][] CDPLoginDetailsData()
+	@DataProvider(name = "CDPDetailsData")
+	public Object[][] CDPDetailsData()
 	{
 		try
 		{
 			data = testData(xlFilePath,sheetName);
 
 		  /*Get number of rows*/
-			intRowCount = (data.length);
+//			intRowCount = (data.length);
 		}
 		catch(Exception ex)
 		{
@@ -67,7 +67,6 @@ public class DataProviderHelper extends BaseClassHelper
 		}
 		return data;
 	}
-
 
 	//Create a constructor method to load the workbook(Generic method)
     public Object[][] testData(String xlFilePath, String sheetName) 

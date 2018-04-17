@@ -18,7 +18,7 @@ public class loginTestClass extends BaseClassHelper
     //Create an Instance-Variable to access page objects
     LoginPageObjects careerDevelopmentPageObjects;
 
-    @Test(priority = 1,dataProvider = "CDPLoginDetailsData",dataProviderClass = DataProviderHelper.class)
+    @Test(dataProvider = "CDPLoginDetailsData",dataProviderClass = DataProviderHelper.class)
     public void LoginDetails(String UserNameField, String PassWordField)
     {
         try

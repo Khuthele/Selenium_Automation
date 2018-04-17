@@ -12,6 +12,9 @@ import eohmc.selenium.core.helperClasses.BaseClassHelper;
 import eohmc.selenium.core.helperClasses.DataProviderHelper;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Time;
+import java.util.concurrent.TimeUnit;
+
 import eohmc.selenium.core.pagesObjects.cdp.LoginPageObjects;
 import eohmc.selenium.core.pagesObjects.cdp.UserProfilePageObjects;
 import org.testng.annotations.Test;
@@ -23,22 +26,21 @@ import org.testng.annotations.Test;
 public class userProfileTestClass extends BaseClassHelper
 {
 	//Create an Instance-Variable to access page objects
-    LoginPageObjects careerDevelopmentPageObjects;
-    UserProfilePageObjects userProfilePageobjects;
+    LoginPageObjects loginPageObjects = new LoginPageObjects(driver);
+    UserProfilePageObjects userProfilePageobjects = new UserProfilePageObjects(driver);
 
-    @Test(priority = 1,dataProvider = "CDPLoginDetailsData",dataProviderClass = DataProviderHelper.class)
-    public void LoginDetails(String UserNameField, String PassWordField)
-        {
+    @Test(dataProvider = "CDPDetailsData",dataProviderClass = DataProviderHelper.class)
+    public void UserProfileDetailsTab(String UserNameField, String PassWordField,String FacilitatedBy, String Venue, String MeetingDate,String MeetingTIme,
+                                      String AssessmentGoalsField, String ActionsCategory, String ActionsDescription,String ActionsTargetDate)
+    {
         try
         {
-            //Create Page Objects
-            careerDevelopmentPageObjects = new LoginPageObjects(driver);
-
-            //Capture-server-error
             try
             {
                 test = extent.createTest("Navigate To URL.");
+
                 driver.get(getConfig().getApplicationUrl());
+
                 test.pass(MarkupHelper.createLabel("Career Development Portal URL is up and running.", ExtentColor.GREY));
             }
             catch (Exception e)
@@ -47,33 +49,33 @@ public class userProfileTestClass extends BaseClassHelper
                 test.fail(MarkupHelper.createLabel("[ERROR] - Failed to navigate to URL Site.", ExtentColor.RED));
             }
 
-            test = extent.createTest("Navigate To The Home Page.");
+            test = extent.createTest("Navigate To Home Page.");
 
-            Thread.sleep(2000);
+            TimeUnit.SECONDS.sleep(2);
 
-            Assertions.isTrue("true", careerDevelopmentPageObjects.isUserNameFieldDisplay());
+            Assertions.isTrue("true", loginPageObjects.isUserNameFieldDisplay());
 
-            careerDevelopmentPageObjects.EnterUsernameDetails(UserNameField);
+            loginPageObjects.EnterUsernameDetails(UserNameField);
 
-            if (careerDevelopmentPageObjects.IsNextButtonDisplayed() == true)
+            if (loginPageObjects.IsNextButtonDisplayed() == true)
             {
-                Thread.sleep(3000);
+                TimeUnit.SECONDS.sleep(3);
 
-                careerDevelopmentPageObjects.clickNextButton();
+                loginPageObjects.clickNextButton();
 
-                Thread.sleep(6000);
+                TimeUnit.SECONDS.sleep(6);
 
-                Assertions.isTrue("true", careerDevelopmentPageObjects.IsPassWordFieldDisplayed());
+                Assertions.isTrue("true", loginPageObjects.IsPassWordFieldDisplayed());
 
-                careerDevelopmentPageObjects.EnterPassWordDetails(PassWordField);
+                loginPageObjects.EnterPassWordDetails(PassWordField);
 
-                Assertions.isTrue("true", careerDevelopmentPageObjects.IsSignInButtonDisplayed());
+                Assertions.isTrue("true", loginPageObjects.IsSignInButtonDisplayed());
 
-                careerDevelopmentPageObjects.clickSignInButton();
+                loginPageObjects.clickSignInButton();
 
-                Assertions.isTrue("true", careerDevelopmentPageObjects.IsBackButtonDisplayed());
+                Assertions.isTrue("true", loginPageObjects.IsBackButtonDisplayed());
 
-                careerDevelopmentPageObjects.clickBackButton();
+                loginPageObjects.clickBackButton();
 
                 test.pass(MarkupHelper.createLabel("Test Passed : Successfully navigated to the Home Page.", ExtentColor.GREEN));
                 File screenshotPath = captureScreen(driver,"Passed Home Page.");
@@ -84,9 +86,10 @@ public class userProfileTestClass extends BaseClassHelper
                 test.fail(MarkupHelper.createLabel("Test Failed:[ERROR] - Failed to navigate to the Home Page.",ExtentColor.RED));
                 test.log(Status.FAIL,"[ERROR] - Failed to navigate to the Home Page.");
                 File screenshotPath = captureScreen(driver,"[ERROR] - Failed Home Page.");
-                test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
+                test.fail("Home Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
             }
-            Thread.sleep(6000);
+
+            TimeUnit.SECONDS.sleep(8);
         }
         catch(InterruptedException ex)
         {
@@ -96,100 +99,204 @@ public class userProfileTestClass extends BaseClassHelper
         {
             System.out.println("[ERROR] - IO Exception: " + ex.getMessage());
         }
-    }
 
-    @Test(priority = 2)
-    public void LoginDetails()
-    {
         try
         {
-            //Create Page Objects
-            userProfilePageobjects = new UserProfilePageObjects(driver);
+                if (userProfilePageobjects.isEditButtonDisplayed() == true)
+                {
+                    TimeUnit.SECONDS.sleep(8);
 
-            //Capture-server-error
+                    Assertions.isTrue("true", userProfilePageobjects.isViewButtonDisplayed());
+
+                    userProfilePageobjects.clickViewButton();
+
+                    TimeUnit.SECONDS.sleep(3);
+
+                    Assertions.isTrue("true", userProfilePageobjects.isHomeButtonDisplayed());
+
+                    File screenshotPath = captureScreen(driver,"[ERROR] - Failed see view Page.");
+                    test.pass("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
+
+                    userProfilePageobjects.clickHomeButton();
+                    TimeUnit.SECONDS.sleep(3);
+                }
+                else
+                {
+                    test.fail(MarkupHelper.createLabel("Test Failed:[ERROR] - Failed to navigate to the Home Page.",ExtentColor.RED));
+                    test.log(Status.FAIL,"[ERROR] - Failed to navigate to the Home Page.");
+                    File screenshotPath = captureScreen(driver,"[ERROR] - Failed Home Page.");
+                    test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
+                }
+
+                userProfilePageobjects.clickEditButton();
+
+                TimeUnit.SECONDS.sleep(8);
+            }
+            catch(InterruptedException ex)
+            {
+                System.out.println("[ERROR] - Interrupted Exception: " + ex.getMessage());
+            }
+            catch (IOException ex)
+            {
+                System.out.println("[ERROR] - IO Exception: " + ex.getMessage());
+            }
+
+            test = extent.createTest("Navigate To The User Profile Page.");
+
+            Assertions.isTrue("true", userProfilePageobjects.isFacilitatedByDisplayed());
+
+            userProfilePageobjects.clickFacilitatedByDrownDownButton();
+
             try
             {
-                test = extent.createTest("Navigate To Summary.");
-                driver.get(getConfig().getApplicationUrl());
-                test.pass(MarkupHelper.createLabel("Successfully navigated to the career reviews page.", ExtentColor.GREY));
+                if (userProfilePageobjects.IsSaveButtonDisplayed()== true)
+                {
+                    TimeUnit.SECONDS.sleep(4);
+
+                    userProfilePageobjects.selectFacilitatedByPerson(FacilitatedBy).click();
+
+                    TimeUnit.SECONDS.sleep(4);
+
+                    Assertions.isTrue("true", userProfilePageobjects.isVenueDisplayed());
+
+                    userProfilePageobjects.enterVenueNameField(Venue);
+
+                    Assertions.isTrue("true", userProfilePageobjects.isMeetingDateButtonDisplayed());
+
+                    userProfilePageobjects.clickMeetingDateDropDownButton();
+
+                    TimeUnit.SECONDS.sleep(4);
+
+                    if(driver.equals("chrome"))
+                    {
+                        userProfilePageobjects.selectMeetingDate(MeetingDate).click();
+                        userProfilePageobjects.selectMeetingDate(MeetingDate).click();
+                    }
+                    else
+                    {
+                        userProfilePageobjects.selectMeetingDate(MeetingDate).click();
+                    }
+
+                    TimeUnit.SECONDS.sleep(4);
+
+                    Assertions.isTrue("true", userProfilePageobjects.isMeetingTimeButtonDisplayed());
+
+                    userProfilePageobjects.clickMeetingTimeDropDownButton();
+
+                    userProfilePageobjects.selectMeetingTime(MeetingTIme).click();
+
+                    TimeUnit.SECONDS.sleep(4);
+
+                   userProfilePageobjects.clickSaveButton();
+
+                    TimeUnit.SECONDS.sleep(4);
+
+                    test.pass(MarkupHelper.createLabel("Test Passed : Successfully navigated to the Details Tab.", ExtentColor.GREEN));
+                    File screenshotPath = captureScreen(driver,"Passed user Details Tab.");
+                    test.pass("Details Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
+
+                    userProfilePageobjects.clickOKButton();
+
+                    test = extent.createTest("Navigate To The Summary Tab.");
+
+                    Assertions.isTrue("true", userProfilePageobjects.isSummaryTabButtonDisplayed());
+
+                    userProfilePageobjects.clickSummaryTabButton();
+
+                    test.pass(MarkupHelper.createLabel("Test Passed : Successfully navigated to the Summary Tab.", ExtentColor.GREEN));
+                    File screenshotPath1 = captureScreen(driver,"Passed user Summary Tab.");
+                    test.pass("Summary Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath1)));
+                }
+                else
+                {
+                    test.fail(MarkupHelper.createLabel("Test Failed:[ERROR] - Failed to navigate to the Summary Tab.",ExtentColor.RED));
+                    test.log(Status.FAIL,"[ERROR] - Failed to navigate to the Summary Tab.");
+                }
             }
-            catch (Exception e)
+            catch(InterruptedException ex)
             {
-                test.log(Status.FATAL,"Error - Failed to navigate to career reviews page." + e.getMessage());
-                test.fail(MarkupHelper.createLabel("[ERROR] - Failed to navigate to career reviews page.", ExtentColor.RED));
+                System.out.println("[ERROR] - Interrupted Exception: " + ex.getMessage());
             }
-
-            Thread.sleep(3000);
-          
-			if (userProfilePageobjects.isEditButtonDisplayed() == true)
+            catch (IOException ex)
             {
-				Thread.sleep(3000);
-                test.pass(MarkupHelper.createLabel("Test Passed : Successfully navigated to the Home Page.", ExtentColor.GREEN));
-                File screenshotPath = captureScreen(driver,"Passed Home Page.");
-
-                Assertions.isTrue("true", userProfilePageobjects.isViewButtonDisplayed());
-
-                userProfilePageobjects.clickViewButton();
-
-                Thread.sleep(2000);
-
-                Assertions.isTrue("true", userProfilePageobjects.isHomeButtonDisplayed());
-
-                File screenshotPath1 = captureScreen(driver,"[ERROR] - Failed Home Page.");
-                test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath1)));
-
-                userProfilePageobjects.clickHomeButton();
-
-                Thread.sleep(2000);
-
-		      	userProfilePageobjects.clickEditButton();
-				
-				test.pass("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
+                System.out.println("[ERROR] - IO Exception: " + ex.getMessage());
             }
-            else
+
+            try
             {
-                test.fail(MarkupHelper.createLabel("Test Failed:[ERROR] - Failed to navigate to the Home Page.",ExtentColor.RED));
-                test.log(Status.FAIL,"[ERROR] - Failed to navigate to the Home Page.");
-                File screenshotPath = captureScreen(driver,"[ERROR] - Failed Home Page.");
-                test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
-            }
-            Thread.sleep(6000);
-        }
-        catch(InterruptedException ex)
-        {
-            System.out.println("[ERROR] - Interrupted Exception: " + ex.getMessage());
-        }
-        catch (IOException ex)
-        {
-            System.out.println("[ERROR] - IO Exception: " + ex.getMessage());
-        }
+                test = extent.createTest("Navigate To Assessment Page.");
 
-		test = extent.createTest("Navigate To The User Profile Page.");
-	
-	  try
-       {
-	     if (userProfilePageobjects.IsSaveButtonDisplayed()== true)
-	     {
-		    test.pass(MarkupHelper.createLabel("Test Passed : Successfully navigated to the User profile Page.", ExtentColor.GREEN));
-            File screenshotPath = captureScreen(driver,"Passed user profile Page.");
-			test.pass("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
-		 }
-         else
-         {
-            test.fail(MarkupHelper.createLabel("Test Failed:[ERROR] - Failed to navigate to the User Profile Page.",ExtentColor.RED));
-            test.log(Status.FAIL,"[ERROR] - Failed to navigate to the  User Profile Page.");
-            File screenshotPath = captureScreen(driver,"[ERROR] - Failed  User Profile Page.");
-            test.fail("View Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
-          }
-            Thread.sleep(6000);
-        }
-        catch(InterruptedException ex)
-        {
-            System.out.println("[ERROR] - Interrupted Exception: " + ex.getMessage());
-        }
-        catch (IOException ex)
-        {
-            System.out.println("[ERROR] - IO Exception: " + ex.getMessage());
-        }
+                Assertions.isTrue("true", userProfilePageobjects.isAssessmentTabButtonDisplayed());
+
+                userProfilePageobjects.clickAssessmentTabButton();
+
+                TimeUnit.SECONDS.sleep(4);
+
+                Assertions.isTrue("true", userProfilePageobjects.isAssessmentGoalsFieldDisplayed());
+
+                userProfilePageobjects.enterAssessmentGoalField(AssessmentGoalsField);
+
+                Assertions.isTrue("true", userProfilePageobjects.isAssessmentSaveButtonDisplayed());
+
+                userProfilePageobjects.clickAssessmentSaveButtonKButton();
+
+                TimeUnit.SECONDS.sleep(4);
+
+                File screenshotPath = captureScreen(driver,"Passed Assessment Page.");
+               test.pass("Assessment Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath)));
+
+                userProfilePageobjects.clickOKButton();
+
+                test = extent.createTest("Navigate To Actions Page.");
+
+                Assertions.isTrue("true", userProfilePageobjects.isActionsTabButtonDisplayed());
+
+                userProfilePageobjects.clickActionsTabButton();
+
+                TimeUnit.SECONDS.sleep(4);
+
+                Assertions.isTrue("true", userProfilePageobjects.isActionsCategoryDropButtonDisplayed());
+
+                userProfilePageobjects.clickCategoryDropDownButton();
+
+                TimeUnit.SECONDS.sleep(4);
+
+                userProfilePageobjects.selectCategoryType(ActionsCategory).click();
+
+                Assertions.isTrue("true", userProfilePageobjects.isActionsDescriptionFieldDisplayed());
+
+                userProfilePageobjects.isActionsDescriptionFieldDisplayed();
+
+                userProfilePageobjects.enterActionsDescriptionField(ActionsDescription);
+
+                Assertions.isTrue("true", userProfilePageobjects.isActionsTargetDateButtonDisplayed());
+
+                userProfilePageobjects.clickActionsTargetDateDropDownButton();
+
+                userProfilePageobjects.selectTargetDate(ActionsTargetDate);
+
+                Assertions.isTrue("true", userProfilePageobjects.isActionsAddButtonDisplayed());
+
+                userProfilePageobjects.clickActionsAddButton();
+
+                TimeUnit.SECONDS.sleep(4);
+
+                File screenshotPath1 = captureScreen(driver,"Passed Assessment Page.");
+                test.pass("Assessment Screenshots below: " + test.addScreenCaptureFromPath(String.valueOf(screenshotPath1)));
+
+                Assertions.isTrue("true", userProfilePageobjects.isSummaryTabButtonDisplayed());
+
+                TimeUnit.SECONDS.sleep(4);
+
+                userProfilePageobjects.clickSummaryTabButton();
+            }
+            catch(InterruptedException ex)
+            {
+                System.out.println("[ERROR] - Interrupted Exception: " + ex.getMessage());
+            }
+            catch (IOException ex)
+            {
+                System.out.println("[ERROR] - IO Exception: " + ex.getMessage());
+            }
     }
 }

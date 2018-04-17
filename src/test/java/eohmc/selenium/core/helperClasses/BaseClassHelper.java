@@ -51,7 +51,7 @@ public class BaseClassHelper
     static Date now = new Date();
     static String strDate,toDate;
 	
-	public static WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getChromeBrowser(),getConfig().getApplicationUrl());
+	public static WebDriver driver = BrowserFactoryHelper.startBrowser(getConfig().getFirefoxBrowser(),getConfig().getApplicationUrl());
 
     //Write reusable method to capture screenshots
     public static File captureScreen(WebDriver driver, String screenShotName)

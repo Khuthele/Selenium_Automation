@@ -60,21 +60,21 @@ public class TestReportEmailHelper extends BaseClassHelper
 			//Set the from address
             message.setFrom(new InternetAddress(fromEmail));
 	    
-			String[] recipientList = toEmail.split(",");
-			InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
-			int counter = 0;
-			for (String recipient : recipientList)
-			{
-				recipientAddress[counter] = new InternetAddress(recipient.trim());
-				counter++;
-			}
-			message.setRecipients(Message.RecipientType.TO, recipientAddress);
+//			String[] recipientList = toEmail.split(",");
+//			InternetAddress[] recipientAddress = new InternetAddress[recipientList.length];
+//			int counter = 0;
+//			for (String recipient : recipientList)
+//			{
+//				recipientAddress[counter] = new InternetAddress(recipient.trim());
+//				counter++;
+//			}
+//			message.setRecipients(Message.RecipientType.TO, recipientAddress);
 
-//            //Set the recipient addresses
-//            for(int i=0;i<to.length;i++)//Loop through array of TO emails
-//            {
-//                message.addRecipients(Message.RecipientType.TO, new InternetAddress(to[i]));
-//            }
+            //Set the recipient addresses
+            for(int i=0;i<to.length;i++)//Loop through array of TO emails
+            {
+                message.addRecipient(Message.RecipientType.TO, new InternetAddress(to[i]));
+            }
 
 //            for(int i=0;i<cc.length;i++)//Loop through array of CC emails
 //            {
