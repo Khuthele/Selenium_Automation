@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [eohmc.selenium.core.testCases.om.TS2_CheckTaxCalculatorTestClass]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="eohmc.selenium.core.testCases.om.TS2_CheckTaxCalculatorTestClass">
+        <methods>
+          <include name="getResult"/>
+          <include name="checkTaxCalculators" invocation-numbers="0"/>
+          <include name="setUpReportListener"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- eohmc.selenium.core.testCases.om.TS2_CheckTaxCalculatorTestClass -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [eohmc.selenium.core.testCases.om.TS2_CheckTaxCalculatorTestClass] -->

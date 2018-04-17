@@ -1,0 +1,7 @@
+#surefire
+#Mon Mar 05 14:35:10 CAT 2018
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.0.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=C\:\\EOHMCHybrid
+localRepository=C\:\\Users\\KhutheleM\\.m2\\repository
+basedir=C\:\\EOHMCHybrid
+test=eohmc.selenium.core.helperClasses.TestReportEmailHelper

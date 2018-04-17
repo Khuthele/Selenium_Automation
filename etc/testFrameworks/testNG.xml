@@ -4,13 +4,13 @@
 
     <!--This listener will listen to all the test for reporting and logging to the extentReport test-output folder-->
     <listeners>
-        <listener class-name="eohmc.selenium.core.testCases.cdp.userProfileTestClass"/>
+        <listener class-name="eohmc.selenium.core.testCases.spree.spreeTestClass"/>
     </listeners>
 
     <!--This will drive the execution of ALL the test scripts in the Test suite -->
     <test name="RegressionPack">
         <packages>
-            <package name="eohmc.selenium.core.testCases.cdp.userProfileTestClass" />
+            <package name="eohmc.selenium.core.testCases.spree.spreeTestClass" />
         </packages>
     </test>
     <!--This will drive the execution of SELECTED test scripts in the suite -->
@@ -18,9 +18,9 @@
 
     <test name="Regression" >
         <classes>
-            <class name="eohmc.selenium.core.testCases.cdp.userProfileTestClass">
+            <class name="eohmc.selenium.core.testCases.spree.spreeTestClass">
                 <methods>
-                    <include name="userProfileTestClass" />
+                    <include name="spreeTestClass" />
                 </methods>
             </class>
         </classes>

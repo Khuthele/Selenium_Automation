@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: eohmc.selenium.core.helperClasses.BaseClassHelper
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 71.138 sec <<< FAILURE!
+tearDown(eohmc.selenium.core.helperClasses.BaseClassHelper)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+	at eohmc.selenium.core.helperClasses.BaseClassHelper.tearDown(BaseClassHelper.java:151)
+Caused by: java.lang.NullPointerException
+	at eohmc.selenium.core.helperClasses.TestReportEmailHelper.<clinit>(TestReportEmailHelper.java:21)
+	... 30 more

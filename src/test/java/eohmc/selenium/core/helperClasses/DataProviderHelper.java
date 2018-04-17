@@ -17,25 +17,8 @@ public class DataProviderHelper extends BaseClassHelper
 	Object[][] data = null;
     Object[][] dataFromXL = null;
 
-    @DataProvider(name = "taxCalculatorData")
-    public Object[][] taxCalculatorData()
-	{
-		try
-		{
-          data = testData(xlFilePath,sheetName);
-		  
-		  /*Get number of rows*/
-          intRowCount = (data.length);
-		}
-		catch(Exception ex)
-		{
-		  System.out.println("[ERROR] - Data Exception test data: " + ex.getMessage());
-		}
-		return data;
-	}
-
-	@DataProvider(name = "registerForAccountData")
-	public Object[][] registerForAccountData()
+	@DataProvider(name = "SpreeTestData")
+	public Object[][] SpreeTestData()
 	{
 		try
 		{
@@ -43,23 +26,6 @@ public class DataProviderHelper extends BaseClassHelper
 
 		  /*Get number of rows*/
 			intRowCount = (data.length);
-		}
-		catch(Exception ex)
-		{
-			System.out.println("[ERROR] - Data Exception test data: " + ex.getMessage());
-		}
-		return data;
-	}
-
-	@DataProvider(name = "CDPDetailsData")
-	public Object[][] CDPDetailsData()
-	{
-		try
-		{
-			data = testData(xlFilePath,sheetName);
-
-		  /*Get number of rows*/
-//			intRowCount = (data.length);
 		}
 		catch(Exception ex)
 		{

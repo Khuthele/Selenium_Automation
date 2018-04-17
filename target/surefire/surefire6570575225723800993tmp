@@ -1,0 +1,11 @@
+#surefire
+#Fri Mar 02 11:10:52 CAT 2018
+jpda.address=61371
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.0.2\\java\\maven-nblib\\netbeans-eventspy.jar
+jpda.listen=true
+forkMode=once
+user.dir=C\:\\EOHMCHybrid
+localRepository=C\:\\Users\\KhutheleM\\.m2\\repository
+test=eohmc.selenium.core.testCases.om.TS1_CheckSiteStatusTestClass
+basedir=C\:\\EOHMCHybrid
+maven.surefire.debug=-Xdebug -Xrunjdwp\:transport\=dt_socket,server\=n,address\=61371
