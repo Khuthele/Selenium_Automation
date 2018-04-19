@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc8488cf-2751-4562-8325-620d3e12fd4b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/testResources/MasterTestSuite.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/etc/TestConfig.properties" afterPath="$PROJECT_DIR$/etc/TestConfig.properties" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/etc/testFrameworks/testNG.xml" afterPath="$PROJECT_DIR$/etc/testFrameworks/testNG.xml" />
-      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/BaseClassHelper.java" afterPath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/BaseClassHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/DataProviderHelper.java" afterPath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/DataProviderHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/cdp/ActiveReviewsPageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/cdp/DashBoardPageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/cdp/EmployeesPageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/cdp/LoginPageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/cdp/UserProfilePageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/om/HomePagePageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/om/TaxCalculatorsPageObjects.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/cdp/loginTestClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/cdp/userProfileTestClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/om/TS0_FindBrokenLinksTestClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/om/TS1_CheckSiteStatusTestClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/om/TS2_CheckTaxCalculatorTestClass.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-24-52.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-24-52.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-28-49.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-28-49.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-52-45.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-52-45.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-53-11.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-53-11.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-53-47.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 15-53-47.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 16-05-35.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 16-05-35.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 18-30-40.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 18-30-40.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 18-58-28.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 18-58-28.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 18-59-53.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 18-59-53.html" />
+      <change beforePath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 19-01-16.html" afterPath="$PROJECT_DIR$/etc/testOutPuts/reports/Automation Test Execution Report_17-04-2018 19-01-16.html" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/spree/spreeTestClass.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/eohmc/selenium/core/testCases/spree/spreeTestClass.class" afterPath="$PROJECT_DIR$/target/test-classes/eohmc/selenium/core/testCases/spree/spreeTestClass.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,40 +30,20 @@
     <favorites_list name="eohmc-selenium-core" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48260212">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="spreeTestClass.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/spree/spreeTestClass.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="SpreePageObjects.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/spree/SpreePageObjects.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="APITesting.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/API/APITesting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,8 +105,10 @@
         <option value="$PROJECT_DIR$/etc/testFrameworks/testNG.xml" />
         <option value="$PROJECT_DIR$/etc/TestConfig.properties" />
         <option value="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/BaseClassHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/spree/spreeTestClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/spree/SpreePageObjects.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/spree/Spree/spreeTestClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/spree/spreeTestClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/API/APITesting.java" />
       </list>
     </option>
   </component>
@@ -151,8 +129,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="22" />
+    <option name="x" value="-2061" />
+    <option name="y" value="21" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
@@ -172,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -184,17 +161,6 @@
             <path>
               <item name="eohmc-selenium-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="EOHMCHybridFrameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eohmc-selenium-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EOHMCHybridFrameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
-              <item name="testFrameworks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eohmc-selenium-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EOHMCHybridFrameworks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,15 +183,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eohmc-selenium-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EOHMCHybridFrameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="helperClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eohmc-selenium-core" type="b2602c69:ProjectViewProjectNode" />
@@ -236,11 +193,21 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="spree" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="eohmc-selenium-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EOHMCHybridFrameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="testCases" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -248,7 +215,7 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/EOHMCHybrid/src/test/java/eohmc/selenium/core/pagesObjects/cdp/LoginPageObjects.java" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="C:/EOHMCHybrid" />
+    <property name="last_opened_file_path" value="C:/android-UniversalMusicPlayer-master" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -262,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.spreeTestClass.SpreeNavigation">
+  <component name="RunManager" selected="TestNG.APITesting.testConnectRequest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -304,37 +271,108 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="spreeTestClass.SpreeNavigation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="eohmc.selenium.core.testCases.spree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="eohmc-selenium-core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.spree" />
-      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.spreeTestClass" />
-      <option name="METHOD_NAME" value="SpreeNavigation" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="APITesting" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eohmc.selenium.core.testCases.API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eohmc-selenium-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.API" />
+      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.API.APITesting" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="APITesting.testConnectRequest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eohmc.selenium.core.testCases.API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eohmc-selenium-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.API" />
+      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.API.APITesting" />
+      <option name="METHOD_NAME" value="testConnectRequest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="APITesting.testStatusCode" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eohmc.selenium.core.testCases.API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eohmc-selenium-core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.API" />
+      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.API.APITesting" />
+      <option name="METHOD_NAME" value="testStatusCode" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -363,42 +401,10 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="spreeTestClass" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="spreeTestClass.SpreeNavigation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="eohmc.selenium.core.testCases.cdp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="eohmc-selenium-core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.spree" />
-      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.spreeTestClass" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="spreeTestClass.SpreeNavigation (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="eohmc.selenium.core.testCases.spree.*" />
+          <option name="PATTERN" value="eohmc.selenium.core.testCases.spree.Spree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -407,39 +413,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.spree" />
-      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.spreeTestClass" />
-      <option name="METHOD_NAME" value="SpreeNavigation" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="spreeTestClass.SpreeNavigation (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="eohmc.selenium.core.testCases.spree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="eohmc-selenium-core" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.spree" />
-      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.spreeTestClass" />
+      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.Spree.spreeTestClass" />
       <option name="METHOD_NAME" value="SpreeNavigation" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -462,7 +436,7 @@
     <configuration name="spreeTestClass.SpreeNavigation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="eohmc.selenium.core.testCases.spree.*" />
+          <option name="PATTERN" value="eohmc.selenium.core.testCases.spree.Spree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -471,7 +445,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="eohmc.selenium.core.testCases.spree" />
-      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.spreeTestClass" />
+      <option name="MAIN_CLASS_NAME" value="eohmc.selenium.core.testCases.spree.Spree.spreeTestClass" />
       <option name="METHOD_NAME" value="SpreeNavigation" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -497,20 +471,18 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.spreeTestClass" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.spreeTestClass.SpreeNavigation" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation (1)" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation (2)" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.APITesting.testStatusCode" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.APITesting" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.APITesting.testConnectRequest" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation (2)" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.spreeTestClass" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.spreeTestClass.SpreeNavigation" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.APITesting.testConnectRequest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.APITesting" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.APITesting.testStatusCode" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.spreeTestClass.SpreeNavigation" />
       </list>
     </recent_temporary>
   </component>
@@ -574,14 +546,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="spreeTestClass_SpreeNavigation - 2018.04.17 at 18h 31m 14s.xml">
-      <configuration name="spreeTestClass.SpreeNavigation" configurationId="TestNG" />
+    <history-entry file="APITesting - 2018.04.18 at 14h 28m 40s.xml">
+      <configuration name="APITesting" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="spreeTestClass_SpreeNavigation - 2018.04.17 at 18h 35m 45s.xml">
-      <configuration name="spreeTestClass.SpreeNavigation" configurationId="TestNG" />
+    <history-entry file="APITesting_testConnectRequest - 2018.04.18 at 14h 50m 33s.xml">
+      <configuration name="APITesting.testConnectRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="spreeTestClass_SpreeNavigation - 2018.04.17 at 18h 42m 09s.xml">
-      <configuration name="spreeTestClass.SpreeNavigation" configurationId="TestNG" />
+    <history-entry file="APITesting_testStatusCode - 2018.04.18 at 14h 22m 48s.xml">
+      <configuration name="APITesting.testStatusCode" configurationId="TestNG" />
     </history-entry>
     <history-entry file="spreeTestClass_SpreeNavigation - 2018.04.17 at 18h 45m 36s.xml">
       <configuration name="spreeTestClass.SpreeNavigation" configurationId="TestNG" />
@@ -615,22 +587,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
+    <frame x="-1928" y="-173" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32200646" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29354838" sideWeight="0.4936034" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46925566" sideWeight="0.525" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30322582" sideWeight="0.5063966" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32580644" sideWeight="0.46002132" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688172" sideWeight="0.525" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30322582" sideWeight="0.5021322" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32580644" sideWeight="0.5399787" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18496802" sideWeight="0.49569893" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21108742" sideWeight="0.49569893" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -641,6 +612,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32150537" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15268818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -737,7 +709,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/cdp/UserProfilePageObjects.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/cdp/userProfileTestClass.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/ExcelDataConsumerHelper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -902,26 +873,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="135" column="11" lean-forward="false" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/TestConfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/helperClasses/BaseClassHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,24 +884,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/pagesObjects/spree/SpreePageObjects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/spree/spreeTestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/TestConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eohmc/selenium/core/testCases/API/APITesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
