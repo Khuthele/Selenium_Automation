@@ -15,7 +15,6 @@ public class APITesting
                 statusCode(200);
     }
 
-
     //It will parameters and headers can be set
     @Test
     public void testHasItemFunction()
@@ -29,5 +28,4 @@ public class APITesting
                 statusCode(200).
                 log().all();
     }
-
 }
